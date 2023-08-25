@@ -1,4 +1,5 @@
 ---
+import Button from "../components/Card.astro";
 ---
 
 <html lang="en">
@@ -10,6 +11,16 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div>
+			<Button
+			variant="primary"
+			img="../src/assets/images/test.jpg"
+			text1="Micro Backpack"
+			text2="Are you a minimalist looking for a compact carry option? The Micro Backpackis the perfect size for your everyday essential carry items."
+			status="Delivered"
+			price="$90.00"
+			view="View Order">
+			</Button>
+		</div>
 	</body>
 </html>
