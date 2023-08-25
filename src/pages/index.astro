@@ -1,5 +1,6 @@
 ---
-import Button from "../components/Card.astro";
+import Card from "../components/Card.astro";
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -11,8 +12,8 @@ import Button from "../components/Card.astro";
 		<title>Astro</title>
 	</head>
 	<body>
-		<div>
-			<Button
+		<div class="card">
+			<Card
 			variant="primary"
 			img="../src/assets/images/test.jpg"
 			text1="Micro Backpack"
@@ -20,7 +21,15 @@ import Button from "../components/Card.astro";
 			status="Delivered"
 			price="$90.00"
 			view="View Order">
-			</Button>
+			</Card>
 		</div>
 	</body>
 </html>
+
+<style>
+main{
+		max-width: 1000px;
+
+}
+
+</style>
